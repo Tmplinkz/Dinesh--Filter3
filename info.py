@@ -22,21 +22,21 @@ PICS = (environ.get('PICS', 'https://graph.org/file/41221d13c9b161ff306f6.jpg'))
 
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '969099516, 1758343727').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001543052371').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001543052371 -1001884900557').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', '-1001780128949')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001824922603')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Harsha:harsha@cluster0.ah73die.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "CINESANDHADI")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'CineSandhadi')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://daaaavudaaaa_info1:daaaavudaaaa_info1@cluster0.ookasqc.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "csnew")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001866542154'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001818180033'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'CSAdmin69_bot')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
