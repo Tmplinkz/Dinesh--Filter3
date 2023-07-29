@@ -18,11 +18,11 @@ async def credits(_, message):
 
 @Client.on_message(filters.command("movies", CMD))
 async def movie(_, message):
-    await message.reply_text("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nᴍᴏᴠɪᴇ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ɪɴ ᴛʜᴇ ʙᴏᴛ ᴏʀ ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ᴀᴠᴀᴛᴀʀ: ᴛʜᴇ ᴡᴀʏ ᴏғ ᴡᴀᴛᴇʀ\n\n🚯 ᴅᴏɴᴛ ᴛʏᴘᴇ ʟɪᴋᴇ ᴛʜɪs 🤧 ➠ ':(ᴅᴏɴᴛ ᴍᴇɴᴛɪᴏɴ ʟᴀɴɢᴜᴀɢᴇ ʙᴇsɪᴅᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ,ᴀɴᴅ ᴛʜᴇᴀᴛʀᴇ prints ᴀʀᴇ ɴᴏᴛ ᴜᴘʟᴏᴀᴅᴇᴅ ɪɴ ᴏᴜʀ ʙᴏᴛ)\n\nᴄᴏᴅᴇᴅ ʙʏ HARSHA")
+    await message.reply_text("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n𝗠𝗼𝘃𝗶𝗲𝘀 𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝗙𝗼𝗿𝗺𝗮𝘁\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nGO TO GOOGLE ➠ TYPE MOVIE NAME ➠ COPY MOVIE NAME FROM GOOGLE ➠ PASTE COPIED MOVIE NAME IN THE BOT OR REQUEST GROUP\n\nEXAMPLE : SAMAJAVARAGAMANA 2023 ELA NAME AND YEAR PETANDI\n\n🚯 DONT TYPE IN THIS FORMAT 🤧 ➠ :(LANGUAGE MENTION CHEYAKANDII,AND MAIN THING THEATRE PRINTS ARE NOT UPLOADED IN OUR BOT⚠️⚠️)\n\nCODED BY @CSADMIN69_BOT")
 
 @Client.on_message(filters.command("series", CMD))
 async def series(_, message):
-    await message.reply_text("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ᴍᴏɴᴇʏ ʜᴇɪsᴛ S01E01\n\n🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(Money Heist season 1,ᴘᴀʀᴛɪᴄᴜʟᴀʀ ɢᴀ sᴇᴀsᴏɴ ᴀɴᴅ ᴇᴘɪsᴏᴅᴇ ᴍᴇɴᴛɪᴏɴ ᴄʜᴇʏᴀɴᴅɪ ғᴏʀ ʙᴇᴛᴛᴇʀ ʀᴇsᴜʟᴛ ʟɪᴋᴇ ᴀʙᴏᴠᴇ ғᴏʀᴍᴀᴛ)\n\nᴄᴏᴅᴇᴅ ʙʏ HARSHA")
+    await message.reply_text("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n𝗦𝗲𝗿𝗶𝗲𝘀 𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝗙𝗼𝗿𝗺𝗮𝘁\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nGO TO GOOGLE ➠ TYPE SERIES NAME ➠ COPY SERIES NAME ADD SEASON NUMBER LIKE S01 BESIDE MOVIE NAME ➠ PASTE COPIED SERIES NAME WITH SEASON IN THE BOT OR REQUEST GROUP\n\nᴇxᴀᴍᴘʟᴇ : ᴍᴏɴᴇʏ ʜᴇɪsᴛ S01E01\n\n🚯 DONT TYPE IN THIS FORMAT ➠ ':(Money Heist season 1,ELA TYPE CHESTHE RAVU PARTICULAR FORMAT LO PAMPALI PAINA FORMAT CHUDANDI )\n\nCODED BY @CSADMIN69_BOT")
 
 @Client.on_message(filters.command("download", CMD))
 async def tutorial(_, message):
