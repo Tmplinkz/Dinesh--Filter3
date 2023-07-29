@@ -22,7 +22,7 @@ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Nᴏᴡ 👇</b>"""
     PONG_TXT = """Cʜᴇᴄᴋ Mʏ Pɪɴɢ Bʏ Cʟɪᴄᴋɪɴɢ 👉 /ping"""
 
     ABOUT_TXT = """<b>🤖 ᴍʏ ɴᴀᴍᴇ : <a href=http://t.me/CSadmin69_bot>CINESANDHADI FILES BOT</a>
-👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=http://t.me/CSadmin69_bot>DARK WOLF</a>
+👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=http://t.me/CSadmin69_bot>CSadmin69_bot</a>
 📝 ʟᴀɴɢᴜᴀɢᴇ : ᴘʏʀᴏɢʀᴀᴍ
 📚 ꜰʀᴀᴍᴇᴡᴏʀᴋ : ᴘʏᴛʜᴏɴ 3
 📡 ʜᴏsᴛᴇᴅ ᴏɴ : ғʀᴇᴇ ʜᴏsᴛɪɴɢ
@@ -31,13 +31,13 @@ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Nᴏᴡ 👇</b>"""
 
     SOURCES_TXT = """NEN CHEPAN PO😏😏. 
 
-- CREDITS <a href=hhttp://t.me/CSadmin69_bot>DARK WOLF</a>
+- CREDITS <a href=hhttp://t.me/CSadmin69_bot>@CSadmin69_bot</a>
 
 - & Rᴇᴩᴏ Lɪɴᴋ 👇 Hᴇʀᴇ"""
 
     SOURCE_TXT = """NEN CHEPAN PO😏😏.</b>
 
-- 100﹪ CREDITS <a href=http://t.me/CSadmin69_bot>DARK WOLF</a></b>
+- 100﹪ CREDITS <a href=http://t.me/CSadmin69_bot>@CSadmin69_bot</a></b>
 
 - Rᴇᴩᴏ Lɪɴᴋ 👇 Hᴇʀᴇ"""
 
