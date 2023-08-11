@@ -26,7 +26,7 @@ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Nᴏᴡ 👇</b>"""
 📝 ʟᴀɴɢᴜᴀɢᴇ : ᴘʏʀᴏɢʀᴀᴍ
 📚 ꜰʀᴀᴍᴇᴡᴏʀᴋ : ᴘʏᴛʜᴏɴ 3
 📡 ʜᴏsᴛᴇᴅ ᴏɴ : ғʀᴇᴇ ʜᴏsᴛɪɴɢ
-📢 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : <a href=https://t.me/+F8ia86TgrgA3MTFl>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
+📢 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : <a href=https://t.me/+JMMJAoTfLjdjOTY1>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
 🌟 Sᴏᴜʀᴄᴇ Cᴏᴅᴇ : <a href=http://t.me/CSadmin69_bot>ʀᴇᴩᴏ ʟɪɴᴋ</a></b>"""
 
     SOURCES_TXT = """NEN CHEPAN PO😏😏. 
