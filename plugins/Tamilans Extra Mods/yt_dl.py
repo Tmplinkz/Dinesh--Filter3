@@ -10,6 +10,10 @@ from yt_dlp import YoutubeDL
 
 # Your bot initialization goes here (if applicable)
 
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+}
+
 @Client.on_message(filters.command(['song', 'mp3']) & filters.private)
 async def song(client, message):
     user_name = message.from_user.first_name
@@ -17,14 +21,18 @@ async def song(client, message):
     print(query)
     m = await message.reply(f"**Searching for your song...!\n{query}**")
 
-    ydl_opts = {"format": "bestaudio[ext=m4a]"}
+    ydl_opts = {
+        "format": "bestaudio[ext=m4a]",
+        "quiet": True,
+        "no_warnings": True
+    }
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
         link = f"https://youtube.com{results[0]['url_suffix']}"
         title = results[0]["title"][:40]
         thumbnail = results[0]["thumbnails"][0]
         thumb_name = f'thumb{title}.jpg'
-        thumb = requests.get(thumbnail, allow_redirects=True)
+        thumb = requests.get(thumbnail, headers=HEADERS, allow_redirects=True)
         open(thumb_name, 'wb').write(thumb.content)
         performer = f"[Harsha™]"
         duration = results[0]["duration"]
