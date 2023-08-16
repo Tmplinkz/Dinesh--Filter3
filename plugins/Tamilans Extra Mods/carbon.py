@@ -1,6 +1,6 @@
 from pyrogram import filters
 from aiohttp import ClientSession
-from pyrogram import Client as app
+from pyrogram import Client as bot
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from asyncio import gather
 from datetime import datetime, timedelta
@@ -26,7 +26,7 @@ async def make_carbon(code):
     return image
 
 
-@app.on_message(filters.command("carbon"))
+@bot.on_message(filters.command("carbon"))
 async def carbon_func(_, message):
     if not message.reply_to_message:
         return await message.reply_text(
@@ -43,7 +43,7 @@ async def carbon_func(_, message):
     await message.reply_photo(
         photo=carbon,
         caption="**CᴏᴅᴇᴅᴇD Bʏ @CSAdmin69_bot**",
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝚄𝚂", url="https://t.me/+szVUa25KLuFlNmFl")]]),                   
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("𝚂𝚄𝙿𝙿𝙾𝚁𝚃 𝚄𝚂", url="https://t.me/mkn_bots_updates")]]),                   
     )
     await m.delete()
     carbon.close()
