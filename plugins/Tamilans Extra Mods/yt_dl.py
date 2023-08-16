@@ -92,34 +92,41 @@ async def vsong(client, message: Message):
     await asyncio.sleep(0.6)
     url = mo
     sedlyf = wget.download(kekme)
-   ydl_opts = {
-    "format": "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best",
-    "outtmpl": "%(id)s.%(ext)s",
-}
-
-try:
-    with YoutubeDL(ydl_opts) as ydl:
-        ydl_info = ydl.extract_info(url, download=True)
-        file_stark = f"{ydl_info['id']}.{ydl_info['ext']}"
-        capy = f"**Title:** [{thum}]({mo})\n**Requested by:** {message.from_user.mention}"
-except Exception as e:
-    return await pablo.edit_text(f"**Download Failed Please Try Again!** \n**Error :** `{str(e)}`")
-
+    opts = {
+        "format": "best",
+        "addmetadata": True,
+        "key": "FFmpegMetadata",
+        "prefer_ffmpeg": True,
+        "geo_bypass": True,
+        "nocheckcertificate": True,
+        "postprocessors": [{"key": "FFmpegVideoConvertor", "preferedformat": "mp4"}],
+        "outtmpl": "%(id)s.mp4",
+        "logtostderr": False,
+        "quiet": True,
+    }
+    try:
+        with YoutubeDL(opts) as ytdl:
+            ytdl_data = ytdl.extract_info(url, download=True)
+    except Exception as e:
+        return await pablo.edit_text(f"**Download Failed Please Try Again!** \n**Error :** `{str(e)}`")
 
     file_stark = f"{ytdl_data['id']}.mp4"
     capy = f"""**Title:** [{thum}]({mo})\n**Requested by:** {message.from_user.mention}"""
 
-   await client.send_video(
-    message.chat.id,
-    video=file_stark,
-    duration=int(ydl_info["duration"]),
-    caption=capy,
-    thumb=sedlyf,
-    parse_mode="markdown",
-    reply_to_message_id=message.message_id,
-)
+    await client.send_video(
+        message.chat.id,
+        video=open(file_stark, "rb"),
+        duration=int(ytdl_data["duration"]),
+        file_name=str(ytdl_data["title"]),
+        thumb=sedlyf,
+        caption=capy,
+        supports_streaming=True,
+        reply_to_message_id=message.id
+    )
     await pablo.delete()
     for files in (sedlyf, file_stark):
         if files and os.path.exists(files):
             os.remove(files)
+
+
 
