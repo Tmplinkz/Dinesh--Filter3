@@ -6,13 +6,9 @@ import requests
 import wget
 from youtube_search import YoutubeSearch
 from youtubesearchpython import SearchVideos
-from yt_dlp import YoutubeDL
+import yt_dlp
 
 # Your bot initialization goes here (if applicable)
-
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
-}
 
 @Client.on_message(filters.command(['song', 'mp3']) & filters.private)
 async def song(client, message):
@@ -21,18 +17,14 @@ async def song(client, message):
     print(query)
     m = await message.reply(f"**Searching for your song...!\n{query}**")
 
-    ydl_opts = {
-        "format": "bestaudio[ext=m4a]",
-        "quiet": True,
-        "no_warnings": True
-    }
+    ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
         link = f"https://youtube.com{results[0]['url_suffix']}"
         title = results[0]["title"][:40]
         thumbnail = results[0]["thumbnails"][0]
         thumb_name = f'thumb{title}.jpg'
-        thumb = requests.get(thumbnail, headers=HEADERS, allow_redirects=True)
+        thumb = requests.get(thumbnail, allow_redirects=True)
         open(thumb_name, 'wb').write(thumb.content)
         performer = f"[Harsha™]"
         duration = results[0]["duration"]
@@ -44,10 +36,10 @@ async def song(client, message):
 
     await m.edit("**Downloading your song...!**")
     try:
-        with YoutubeDL(ydl_opts) as ydl:
-            info_dict = ydl.extract_info(link, download=False)
-            audio_file = ydl.prepare_filename(info_dict)
-            ydl.process_info(info_dict)
+        ydl = yt_dlp.YoutubeDL(ydl_opts)
+        info_dict = ydl.extract_info(link, download=False)
+        audio_file = ydl.prepare_filename(info_dict)
+        ydl.process_info(info_dict)
 
         cap = "**BY ›› [Harsha](http://t.me/CSadmin69_bot)**"
         dur_arr = duration.split(':')
@@ -113,8 +105,8 @@ async def vsong(client, message: Message):
         "quiet": True,
     }
     try:
-        with YoutubeDL(opts) as ytdl:
-            ytdl_data = ytdl.extract_info(url, download=True)
+        ydl = yt_dlp.YoutubeDL(opts)
+        ytdl_data = ydl.extract_info(url, download=True)
     except Exception as e:
         return await pablo.edit_text(f"**Download Failed Please Try Again!** \n**Error :** `{str(e)}`")
 
@@ -129,9 +121,4 @@ async def vsong(client, message: Message):
         thumb=sedlyf,
         caption=capy,
         supports_streaming=True,
-        reply_to_message_id=message.id
-    )
-    await pablo.delete()
-    for files in (sedlyf, file_stark):
-        if files and os.path.exists(files):
-            os.remove(files)
+        reply_to_message_id
