@@ -6,7 +6,7 @@ import requests
 import wget
 from youtube_search import YoutubeSearch
 from youtubesearchpython import SearchVideos
-import yt_dlp
+from yt_dlp import YoutubeDL
 
 # Your bot initialization goes here (if applicable)
 
@@ -36,10 +36,10 @@ async def song(client, message):
 
     await m.edit("**Downloading your song...!**")
     try:
-        ydl = yt_dlp.YoutubeDL(ydl_opts)
-        info_dict = ydl.extract_info(link, download=False)
-        audio_file = ydl.prepare_filename(info_dict)
-        ydl.process_info(info_dict)
+        with YoutubeDL(ydl_opts) as ydl:
+            info_dict = ydl.extract_info(link, download=False)
+            audio_file = ydl.prepare_filename(info_dict)
+            ydl.process_info(info_dict)
 
         cap = "**BY ›› [Harsha](http://t.me/CSadmin69_bot)**"
         dur_arr = duration.split(':')
@@ -105,8 +105,8 @@ async def vsong(client, message: Message):
         "quiet": True,
     }
     try:
-        ydl = yt_dlp.YoutubeDL(opts)
-        ytdl_data = ydl.extract_info(url, download=True)
+        with YoutubeDL(opts) as ytdl:
+            ytdl_data = ytdl.extract_info(url, download=True)
     except Exception as e:
         return await pablo.edit_text(f"**Download Failed Please Try Again!** \n**Error :** `{str(e)}`")
 
@@ -121,4 +121,10 @@ async def vsong(client, message: Message):
         thumb=sedlyf,
         caption=capy,
         supports_streaming=True,
-        reply_to_message_id
+        reply_to_message_id=message.id
+    )
+    await pablo.delete()
+    for files in (sedlyf, file_stark):
+        if files and os.path.exists(files):
+            os.remove(files)
+
