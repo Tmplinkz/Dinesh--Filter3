@@ -733,23 +733,10 @@ async def auto_filter(client, msg, spoll=False):
             search = message.text
             files, offset, total_results = await get_search_results(search.lower(), offset=0, filter=True)
             if not files:
-               await client.send_message(
-    file_req_channel,
-    f"-🦋 #REQUESTED_FILE 🦋-\n\n📝Fɪʟᴇ Nᴀᴍᴇ: {search}\n\nRᴇǫᴜᴇsᴛᴇᴅ Bʏ: {message.from_user.first_name}\n\nUsᴇʀ Iᴅ: {message.from_user.id}\n\n🗃Cᴏᴅᴇᴅᴇᴅ Bʏ  @CSadmin69_bot",
-    reply_markup=InlineKeyboardMarkup([
-        [InlineKeyboardButton("🔺 Fɪʟᴇ Uᴩʟᴏᴀᴅᴇᴅ Sᴜᴄᴄᴇssғᴜʟʟʏ 🔺", callback_data="close_data")]
-    ])
-)
-
-l = await message.reply_text(
-    text=f"△ Hᴇʏ Fʀɪᴇɴᴅ {message.from_user.first_name} 😎,\n\nᴘʟᴇᴀᴀꜱᴇ ᴄʜᴇᴄᴋ ᴡʜᴇᴛʜᴇʀ ᴛʜᴇ ᴍᴏᴠɪᴇ ɪꜱ ʀᴇʟᴇᴀꜱᴇᴅ ɪɴ ᴏᴛᴛ!\n\nɪꜰ ɪᴛ ɪꜱ ꜱᴛɪʟʟ ɪɴ ᴛʜᴇᴀᴛʀᴇ ɪᴛ ᴡɪʟʟ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ ʜᴇʀᴇ!\nᴍᴀᴋᴇ ꜱᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜʀ ꜱᴘᴇʟʟɪɴɢ ɪꜱ ᴄᴏʀʀᴇᴄᴛ\n\n➟ 📝Cᴏɴᴛᴇɴᴛ Nᴀᴍᴇ : {search}\n\n➟ 👮 Rᴇǫᴜᴇsᴛᴇᴅ Bʏ Yᴏᴜ : {message.from_user.first_name}\n\n",
-    reply_markup=InlineKeyboardMarkup([
-        [InlineKeyboardButton("━ • │▌║  𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝗚𝗿𝗼𝘂𝗽  ║▌│ • ━", url=f'https://t.me/+kWPAzu2cVbA4ZGVl')],
-        [InlineKeyboardButton("✪ 𝗔𝗱𝗺𝗶𝗻 ✪", url="https://t.me/CSAdmin69_bot"),
-         InlineKeyboardButton("╚»♥️Dᴇʟᴇᴛᴇ Tʜɪs Mᴇssᴀɢᴇ ♥️«╝", callback_data="close_data")]
-    ])
-)
-
+                await client.send_message(file_req_channel,f"-🦋 #REQUESTED_FILE 🦋-\n\n📝Fɪʟᴇ Nᴀᴍᴇ :{search}\n\nRᴇǫᴜᴇsᴛᴇᴅ Bʏ: {message.from_user.first_name}\n\n Usᴇʀ Iᴅ :{message.from_user.id}\n\n🗃Cᴏᴅᴇᴅᴇᴅ Bʏ  @CSadmin69_bot",
+                                                                                                       reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔺 Fɪʟᴇ Uᴩʟᴏᴀᴅᴇᴅ Sᴜᴄᴄᴇssғᴜʟʟʏ 🔺", callback_data="close_data")]]))
+                l = await message.reply_text(text=f"△ Hᴇʏ Fʀɪᴇɴᴅ {message.from_user.first_name} 😎,\n\nʏᴏᴜʀ ʀᴇQᴜᴇꜱᴛ ʜᴀꜱ ʙᴇᴇɴ ꜱᴇɴᴛ ᴛᴏ ᴏᴜʀ ᴀᴅᴍɪɴ'ꜱ ᴅᴀꜱʜʙᴏᴀʀᴅ !\n\nᴘʟᴇᴀꜱᴇ ᴋᴇᴇᴘ ꜱᴏᴍᴇ ᴘᴀᴛɪᴇɴᴄᴇ !\nᴛʜᴇʏ ᴡɪʟʟ ᴜᴘʟᴏᴀᴅ ɪᴛ ᴀꜱ ꜱᴏᴏɴ ᴀꜱ ᴘᴏꜱꜱɪʙʟᴇ.\n\n➟ 📝Cᴏɴᴛᴇɴᴛ Nᴀᴍᴇ : {search}\n\n➟ 👮 Rᴇǫᴜᴇsᴛᴇᴅ Bʏ Yᴏᴜ : {message.from_user.first_name}\n\n༺ @CSAdmin69_bot༻\n\n🦋・‥☆Sᴜᴩᴩᴏʀᴛ Oᴜʀ Cʜᴀɴɴᴇʟ ☆‥・🦋\n╰┈➤・☆ Cinesandhadi ☆",
+                                                                                                       reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("━ • │▌║  Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴩ  ║▌│ • ━", url=f'http://t.me/{temp.U_NAME}?startgroup=true')],[InlineKeyboardButton("✪ Updates ✪", url="https://t.me/+k22XYWdoUSBlODFl"), InlineKeyboardButton("✪ Sᴜᴩᴩᴏʀᴛ Gʀᴏᴜᴩ ✪", url="http://t.me/CSadmin69_bot"), InlineKeyboardButton("✪ Rᴇᴩᴏ ✪", url="http://t.me/CSadmin69_bot")],[InlineKeyboardButton("╚»♥️Dᴇʟᴇᴛᴇ Tʜɪs Mᴇssᴀɢᴇ ♥️«╝", callback_data="close_data")]]))
                 await asyncio.sleep(12)
                 await l.delete()
                 if settings["spell_check"]:
@@ -904,7 +891,7 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("I couldn't find anything related to that. Check your spelling")
+        k = await msg.reply("𝗦𝗰𝗵𝗼𝗼𝗹 𝗘𝗴𝗮 𝗧𝗵𝗲𝗻𝗴𝗶𝗻𝗮𝘃 😂𝗚𝗼𝗼𝗴𝗹𝗲 𝗟𝗼 𝗦𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗖𝗵𝘂𝘀𝗶 𝗖𝗼𝗽𝘆 𝗣𝗮𝘀𝘁𝗲 𝗖𝗵𝗲𝘆😊")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -916,7 +903,7 @@ async def advantage_spell_chok(msg):
         )
     ] for k, movie in enumerate(movielist)]
     btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("𝗦𝗰𝗵𝗼𝗼𝗹 𝗘𝗴𝗮 𝗧𝗵𝗲𝗻𝗴𝗶𝗻𝗮𝘃 😂𝗚𝗼𝗼𝗴𝗹𝗲 𝗟𝗼 𝗦𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗖𝗵𝘂𝘀𝗶 𝗖𝗼𝗽𝘆 𝗣𝗮𝘀𝘁𝗲 𝗖𝗵𝗲𝘆😊",
+    await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 
