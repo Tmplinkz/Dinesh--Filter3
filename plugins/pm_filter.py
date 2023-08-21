@@ -862,7 +862,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I couldn't find any movie in that name.")
+        k = await msg.reply("𝗦𝗰𝗵𝗼𝗼𝗹 𝗘𝗴𝗮 𝗧𝗵𝗲𝗻𝗴𝗶𝗻𝗮𝘃 😂𝗚𝗼𝗼𝗴𝗹𝗲 𝗟𝗼 𝗦𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗖𝗵𝘂𝘀𝗶 𝗖𝗼𝗽𝘆 𝗣𝗮𝘀𝘁𝗲 𝗖𝗵𝗲𝘆😊")
         await asyncio.sleep(8)
         await k.delete()
         return
