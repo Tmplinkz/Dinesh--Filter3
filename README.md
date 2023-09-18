@@ -6,7 +6,7 @@
     <b>Pʀᴇᴍɪᴜᴍ Fɪʟᴛᴇʀ Rᴇᴩᴏ</b>
     </h1>
 
-# 👩‍💻 Cᴏᴅᴇᴅᴇᴅ Bʏ Cinesandhadi
+# 👩‍💻 Cᴏᴅᴇᴅᴇᴅ Bʏ BLASTER
 
 ## HɪɢʜLɪɢʜᴛ Fᴇᴀᴛᴜʀᴇs <b>
 
