@@ -67,7 +67,7 @@ HOW_TO_DOWNLOAD =  environ.get('HOW_TO_DOWNLOAD', 'https://t.me/Blaster_Original
 
 AUTO_DELETE_SECONDS = int(environ.get('AUTO_DELETE_SECONDS', 150))
 
-FILE_REQ_CHANNEL = int(environ.get('FILE_REQ_CHANNEL', '-1001823420155'))
+FILE_REQ_CHANNEL = int(environ.get('FILE_REQ_CHANNEL', '-1004089545155'))
 
 SHORTNER_SITE =  environ.get('SHORTNER_SITE', '') #Put Only Shortner Site domain don't put like this https://tnlink.in/
 
