@@ -20,6 +20,7 @@
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
+            "value": "6877675846:AAH46GZH2li75jfWB2JX3iErVH6LDYlmqiM",
             "required": true
         },
         "API_ID": {
