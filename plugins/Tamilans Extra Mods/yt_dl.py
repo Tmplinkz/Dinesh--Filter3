@@ -41,7 +41,7 @@ async def song(client, message):
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
 
-        cap = "**BY ›› [Harsha](http://t.me/CSadmin69_bot)**"
+        cap = "**BY ›› [ᗪΙΝΣSΗ](http://t.me/dinesh12777)**"
         dur_arr = duration.split(':')
         dur = sum(int(dur_arr[i]) * 60 ** i for i in range(len(dur_arr) - 1, -1, -1))
         await message.reply_audio(
