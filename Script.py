@@ -1,5 +1,5 @@
 class script(object):
-    START_TXT = """<b>Hey {} ɪᴍ 『 BLASTER AUTOFILTER BOT 』 I Can Send Movie Files Just Type The Correct Spelling Below.
+    START_TXT = """<b>Hey {} ɪᴍ 『 𝐀𝐍𝐈𝐌𝐄𝐒𝐀𝐆𝐀 𝐅𝐈𝐋𝐓𝐄𝐑 𝐁𝐎𝐓 』 I Can Send Movie Files Just Type The Correct Spelling Below.
 Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Nᴏᴡ 👇</b>"""
 
     HELP_TXT = """<b>Hᴇʏ {} Fʀɪᴇɴᴅ Hᴇʀᴇ Yᴏᴜʀ Bᴜᴛᴛᴏɴs 👇</b>"""
@@ -21,23 +21,23 @@ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Nᴏᴡ 👇</b>"""
     
     PONG_TXT = """Cʜᴇᴄᴋ Mʏ Pɪɴɢ Bʏ Cʟɪᴄᴋɪɴɢ 👉 /ping"""
 
-    ABOUT_TXT = """<b>🤖 ᴍʏ ɴᴀᴍᴇ : <a href=http://t.me/BlasterUpdatesBot>Contact With Admin</a>
-👨‍💻 ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=http://t.me/BlasterUpdatesBot>ADMIN</a>
+    ABOUT_TXT = """<b>🤖 ᴍʏ ɴᴀᴍᴇ : <a href=http://t.me/AnimeSagaInstuff_bot>Contact With Admin</a>
+👨‍💻 ᴄʀᴇᴀᴛᴇʀ : <a href=http://t.me/dinesh12777>ᗪΙΝΣSΗ</a>
 📝 ʟᴀɴɢᴜᴀɢᴇ : ᴘʏʀᴏɢʀᴀᴍ
 📚 ꜰʀᴀᴍᴇᴡᴏʀᴋ : ᴘʏᴛʜᴏɴ 3
-📡 ʜᴏsᴛᴇᴅ ᴏɴ : ғʀᴇᴇ ʜᴏsᴛɪɴɢ
-📢 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : <a href=https://t.me/+kfsE4hjv2eMyNDE9>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
-🌟 Sᴏᴜʀᴄᴇ Cᴏᴅᴇ : <a href=http://t.me/BlasterUpdatesBot>ʀᴇᴩᴏ ʟɪɴᴋ</a></b>"""
+📡 ʜᴏsᴛᴇᴅ ᴏɴ : vps
+📢 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : <a href=https://t.me/+mea9Kkas3Aw4MGI1>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>
+🌟 Sᴏᴜʀᴄᴇ Cᴏᴅᴇ : <a href=http://t.me/dinesh12777>ʀᴇᴩᴏ ʟɪɴᴋ</a></b>"""
 
     SOURCES_TXT = """KAVALA. 
 
-- CREDITS <a href=hhttp://t.me/BlasterUpdatesBot>ADMIN</a>
+- CREDITS <a href=hhttp://t.me/dinesh12777>ADMIN</a>
 
 - & Rᴇᴩᴏ Lɪɴᴋ 👇 Hᴇʀᴇ"""
 
     SOURCE_TXT = """NEN CHEPAN PO😏😏.</b>
 
-- 100﹪ CREDITS <a href=http://t.me/BlasterUpdatesBot>@BlasterUpdatesBot</a></b>
+- 100﹪ CREDITS <a href=http://t.me/dinesh12777>ᗪΙΝΣSΗ</a></b>
 
 - Rᴇᴩᴏ Lɪɴᴋ 👇 Hᴇʀᴇ"""
 
@@ -67,13 +67,11 @@ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴩ Nᴏᴡ 👇</b>"""
 
     MANUELFILTER_TXT = """<b>Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ Mᴏᴠɪᴇs / Sᴇʀɪᴇs Usɪɴɢ Tʜɪs Bᴏᴛ</b> 😌 🔋
 
-<b>Fɪʀsᴛ Jᴏɪɴ Tʜɪs Gʀᴏᴜᴩ » https://t.me/+kfsE4hjv2eMyNDE9</b>
+<b>Fɪʀsᴛ Jᴏɪɴ Tʜɪs Gʀᴏᴜᴩ » https://t.me/+mea9Kkas3Aw4MGI1</b>
 
 <b>Sᴇɴᴅ Yᴏᴜ Wᴀɴᴛ Mᴏᴠɪᴇs Oʀ Sᴇʀɪᴇs Nᴀᴍᴇ Wɪᴛʜ Cᴏʀʀᴇᴄᴛ Sᴩᴇʟʟɪɴɢ</b>
 
-<b>Aɴᴅ Bᴏᴛ Wɪʟʟ Sᴇɴᴅ Yᴏᴜ Asᴋᴇᴅ Fɪʟᴇ</b>
-
-<b>Hᴏᴡ Tᴏ Oᴩᴇɴ Bᴏᴛ Sᴇɴᴅᴇᴅ Fɪʟᴇ Lɪɴᴋ. » <a href=https://t.me/+kfsE4hjv2eMyNDE9>ᴛᴜᴛᴏʀɪᴀʟ</a>.﹤/b>"""
+<b>Aɴᴅ Bᴏᴛ Wɪʟʟ Sᴇɴᴅ Yᴏᴜ Asᴋᴇᴅ Fɪʟᴇ</b>"""
 
     CONTACT_TXT = """<b>
 <b>»» ° Oɴʟʏ Cᴏɴᴛᴀᴄᴛ Fᴏʀ Pᴀɪᴅ Wᴏʀᴋs / Pʀᴏʙʟᴇᴍ / Dᴏᴜʙᴛ / Cᴏʟʟᴀʙ / Hᴇʟᴩ °</b>
