@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('🤖 Uᴘᴅᴀᴛᴇs 🤖', url='https://t.me/Blaster_Originals')
+                InlineKeyboardButton('🤖 Uᴘᴅᴀᴛᴇs 🤖', url='https://t.me/AnimeSagaIn')
             ],
             [
                 InlineKeyboardButton('ℹ️ Hᴇʟᴘ ℹ️', url=f"https://t.me/{temp.U_NAME}?start=help")
@@ -43,21 +43,21 @@ async def start(client, message):
     if len(message.command) != 2:
         buttons = [[
 
-            InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕', url=f"https://t.me/{temp.U_NAME}?startgroup=true")
+            InlineKeyboardButton('⚡ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⚡', url=f"https://t.me/{temp.U_NAME}?startgroup=true")
 
             ],[
 
-            InlineKeyboardButton('💥 Mᴏᴠɪᴇ Uᴘᴅᴀᴛᴇs 💥', url='https://t.me/Blaster_Originals'),
+            InlineKeyboardButton('• Uᴘᴅᴀᴛᴇs •', url='https://t.me/AnimeSagaIn'),
 
-            InlineKeyboardButton('🔎 Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ 🔍', url='https://t.me/Blaster_Movie_Request')
-
-            ],[
-
-            InlineKeyboardButton('😅 Sᴏᴜʀᴄᴇ Cᴏᴅᴇ 😊', callback_data='sources')
+            InlineKeyboardButton('• Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ •', url='https://t.me/+mea9Kkas3Aw4MGI1')
 
             ],[
 
-            InlineKeyboardButton('💌 Aʙᴏᴜᴛ Aɴᴅ Iɴғᴏ 💌', callback_data= 'about')
+            InlineKeyboardButton('• ᴏᴡɴᴇʀ •', callback_data='https://t.me/dinesh12777')
+
+            ],[
+
+            InlineKeyboardButton('• Aʙᴏᴜᴛ •', callback_data= 'about')
 
             ],[
 
@@ -102,14 +102,14 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕', url=f"https://t.me/{temp.U_NAME}?startgroup=true")
+            InlineKeyboardButton('⚡ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⚡', url=f"https://t.me/{temp.U_NAME}?startgroup=true")
             ],[
-            InlineKeyboardButton('💥 Mᴏᴠɪᴇ Uᴘᴅᴀᴛᴇs 💥', url='https://t.me/Blaster_Originals'),
-            InlineKeyboardButton('🔎 Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ 🔍', url='https://t.me/Blaster_Movie_Request')
+            InlineKeyboardButton('• Mᴏᴠɪᴇ Uᴘᴅᴀᴛᴇs •', url='https://t.me/Blaster_Originals'),
+            InlineKeyboardButton('• Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ •', url='https://t.me/Blaster_Movie_Request')
             ],[
-            InlineKeyboardButton('😅 Sᴏᴜʀᴄᴇ Cᴏᴅᴇ 😊', callback_data='sources')
+            InlineKeyboardButton('• ᴏᴡɴᴇʀ  •', callback_data='https://t.me/dinesh12777')
             ],[
-            InlineKeyboardButton('💌 Aʙᴏᴜᴛ Aɴᴅ Iɴғᴏ 💌', callback_data= 'about')
+            InlineKeyboardButton('• Aʙᴏᴜᴛ Aɴᴅ Iɴғᴏ •', callback_data= 'about')
             ],[
             InlineKeyboardButton('❌ Cʟᴏꜱᴇ ❌', callback_data='close_data')
         ]]
