@@ -441,7 +441,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('• Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ •', url=f"https://t.me/{temp.U_NAME}?startgroup=true")
             ],[
             InlineKeyboardButton('• Uᴘᴅᴀᴛᴇs •', url='https://t.me/AnimeSagaIn'),
-            InlineKeyboardButton('• Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ •', url='https://t.me/Blaster_Movie_Request')
+            InlineKeyboardButton('• Sᴇᴀʀᴄʜ Gʀᴏᴜᴘ •', url='https://t.me/+mea9Kkas3Aw4MGI1')
             ],[
             InlineKeyboardButton('• ᴏᴡɴᴇʀ  •', callback_data='https://t.me/dinesh12777')
             ],[
